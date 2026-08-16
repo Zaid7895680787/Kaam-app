@@ -13,10 +13,9 @@ jobs:
 
       - name: Extract Job project
         run: |
-          unzip -o Job_App_Real_Starter.zip d
-                                              extracted
+          unzip -o Job_App_Real_Starter.zip d extracted
           mkdir job_project
-          cp -r extracted/*/* job_project/
+          cp -r extracted/*/* job_project
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
